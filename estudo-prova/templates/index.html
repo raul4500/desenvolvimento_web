@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>documento</title>
+</head>
+<body>
+    <h1>lista de tarefas</h1>
+    <form action="/add" method="post">
+        <input type="text" name="descricao" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul>            
+        {% for tarefa in lista %}
+        <li>{{lista}}
+    {% endfor %}
+    </ul>
+</body>
+<html>
